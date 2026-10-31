@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+  }
+
+  body {
+    font-family: var(--font-vazirmatn), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-amiri), var(--font-vazirmatn), serif;
+}
+
+.font-persian-ui {
+  font-family: var(--font-vazirmatn), sans-serif;
+}
+
+.font-mono-tabular {
+  font-family: var(--font-vazirmatn), sans-serif;
+  font-variant-numeric: tabular-nums;
+}
